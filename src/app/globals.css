@@ -43,6 +43,7 @@
   --color-foreground: var(--text-primary);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
+  --font-body: var(--font-body);
   --font-mono: "JetBrains Mono", monospace;
   --border-subtle: var(--border-subtle);
   --border-mid: var(--border-mid);
@@ -97,6 +98,55 @@ a {
   text-decoration: none;
 }
 
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: rgba(224, 224, 240, 0.6);
+  border-radius: 50%;
+  animation: moveStars 20s linear infinite;
+}
+
+.star:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.star:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.star:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.star:nth-child(5) {
+  animation-delay: 8s;
+}
+
+.star:nth-child(6) {
+  animation-delay: 10s;
+}
+
+.star:nth-child(7) {
+  animation-delay: 12s;
+}
+
+.star:nth-child(8) {
+  animation-delay: 14s;
+}
+
+.star:nth-child(9) {
+  animation-delay: 16s;
+}
+
+.star:nth-child(10) {
+  animation-delay: 18s;
+}
+
 /* ─── Animation  ───────────────────────────────────── */
 @keyframes fadeIn {
   from {
@@ -105,5 +155,15 @@ a {
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 100%);
   }
 }
