@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import './globals.css'
 import Projects from "@/components/Projects";
 import Personnel from "@/components/Personnel";
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
             <Hero />
             <Projects />
             <Personnel />
+            <Contact />
         </main>
     );
 }
