@@ -9,7 +9,7 @@ export default function Projects() {
             Projects
           </h2>
           <p className="text-sm sm:text-base text-(--text-secondary) font-mono">
-            A selection of work I've built with passion and purpose.
+            A selection of work I&apos;ve built with passion and purpose.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto lg:auto-rows-fr">
