@@ -28,7 +28,7 @@ export default function Hero() {
 
             {/* Bio */}
             <p className="text-sm font-mono sm:text-base lg:text-lg text-(--text-secondary) leading-relaxed text-justify max-w-2xl">
-              Software architect at heart. I design scalable systems before writing code, combining strategic thinking with clean implementation to solve complex problems.
+              Backend-focused developer. I approach development with curiosity first, learning the problem, understanding the system, and then building the solution.
             </p>
 
             {/* CTA Buttons */}
