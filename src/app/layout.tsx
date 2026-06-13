@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Pratik Bhuvad",
-  description: "Software architect at heart. Combine strategic thinking with clean implementation to solve complex problems.",
+  description: "Backend-focused developer. Understanding the problem, learning the system, and building the solution.",
 };
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
