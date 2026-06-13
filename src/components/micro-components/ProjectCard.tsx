@@ -6,35 +6,35 @@ export default function ProjectCard({ project }: { project: Project }) {
   const displayTags = project.tags.slice(0, 3);
 
   return (
-    <div className="rounded-md shadow-sm border-2 border-(--border-subtle) p-6 hover:shadow-md transition-shadow flex flex-col h-full">
+    <div className="rounded-md shadow-sm border-2 border-(--border-subtle) bg-(--bg-card) hover:bg-(--bg-hover) p-6 hover:shadow-md transition-all duration-300 flex flex-col lg:h-full">
       {/* Content Wrapper */}
-      <div className="flex-grow">
+      <div className="lg:grow">
         {/* Project Name */}
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">{project.name}</h3>
+        <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 font-display">{project.name}</h3>
 
         {/* Problem */}
-        <div className="mb-1.5">
-          <p className="text-sm font-medium text-gray-600 mb-1">Problem</p>
-          <p className="text-sm text-gray-700 leading-relaxed text-justify">{project.problem}</p>
+        <div className="mb-3">
+          <p className="text-xs sm:text-sm font-semibold text-(--accent) mb-2 uppercase tracking-wider">Problem</p>
+          <p className="text-sm text-(--text-secondary) leading-relaxed text-justify">{project.problem}</p>
         </div>
 
-        {/* 5px Gap */}
+        {/* Divider */}
         <div style={{ height: '1px', backgroundColor: 'var(--border-subtle)' }} />
 
         {/* Decision */}
-        <div className="mb-4 mt-2">
-          <p className="text-sm font-medium text-gray-600 mb-1">Decision</p>
-          <p className="text-sm text-gray-700 leading-relaxed text-justify">{project.decision}</p>
+        <div className="mb-4 mt-3">
+          <p className="text-xs sm:text-sm font-semibold text-(--accent) mb-2 uppercase tracking-wider">Solution</p>
+          <p className="text-sm text-(--text-secondary) leading-relaxed text-justify">{project.decision}</p>
         </div>
 
         <div style={{ height: '1px', backgroundColor: 'var(--border-subtle)' }} />
       </div>
 
       {/* Tags and Links Container */}
-      <div className="flex items-center justify-between mt-2">
+      <div className="flex items-center justify-between mt-4 pt-4">
         {/* Tags */}
         <div className="flex items-center gap-2">
-          <div className="text-xs text-gray-600">
+          <div className="text-xs text-(--text-muted) font-mono">
             {displayTags.map((tag, index) => (
               <span key={tag}>
                 {tag}
@@ -51,7 +51,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-6 h-6 text-gray-600 hover:text-gray-900 transition-colors"
+            className="inline-flex items-center justify-center w-6 h-6 text-(--text-secondary) hover:text-(--accent) transition-colors duration-300"
             title="View on GitHub"
           >
             <svg
@@ -70,7 +70,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-6 h-6 text-gray-600 hover:text-gray-900 transition-colors"
+              className="inline-flex items-center justify-center w-6 h-6 text-(--text-secondary) hover:text-(--accent) transition-colors duration-300"
               title="View Live"
             >
               <svg
