@@ -7,7 +7,7 @@ import Volunteers from './micro-components/Volunteers';
 
 export default function Personnel() {
   return (
-    <section className="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 py-5">
+    <section id="personnel" className="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div className="">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-2 font-display">
             Background

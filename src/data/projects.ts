@@ -25,11 +25,11 @@ export const projects: Project[] = [
     live: "https://prototech-murex.vercel.app/",
   },
   {
-    name: "MERN ChatApp",
-    problem: "Wanted to understand how modern applications handle real-time communication beyond traditional request-response workflows.",
-    decision:"Implemented a project using Socket.io to learn concepts such as WebSockets, event-driven communication, user presence, and real-time message delivery.",
-    tags: ["MERN", "Cloudinary", "Socket.io"],
-    github: "https://github.com/Pratik-Bhuvad/MERN-ChatApp",
+    name: "Conscious",
+    problem: "Websites accumulate performance debt silently - bloated images, unused CSS, and heavy resources add up to slower load times and measurable carbon cost.",
+    decision: "Built a full-stack auditing tool that runs Lighthouse analysis to estimate CO₂ emissions, then goes further — optimizing images via Cloudinary and CSS via CSSNano and PurgeCSS, turning a report into actionable fixes.",
+    tags: ["MERN", "Cloudinary"],
+    github: "https://github.com/Pratik-Bhuvad/Conscious",
     live: null,
-  },
+},
 ];

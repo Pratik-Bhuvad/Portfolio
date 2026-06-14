@@ -42,7 +42,9 @@ export default function Hero() {
                 GitHub
               </Link>
               <Link
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1tQW1_8XtkaP1lv2UCVoXrmsh8OppDOik/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 sm:px-8 py-3 border-2 border-(--accent) text-(--accent) font-medium rounded hover:bg-(--accent) hover:text-white transition-all duration-300 text-sm sm:text-base"
               >
                 Resume
